@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Escolha de Filme</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<h1>Escolha seu Filme</h1>
+
+<label for="genero">Escolha o Gênero:</label>
+<select id="genero" onchange="atualizarPlataformas()">
+<option value="">Selecione...</option>
+<option value="">Ficção</option>
+<option value="">Comédia</option>
+<option value="">Terror</option>
+</select> 
+
+<label for="plataforma">Escolha a Plataforma:</label>
+<select id="plataforma" onchange="atualizarFilmes()" enable>
+<option value="">Selecione...</option>
+<option value="">Netflix</option>
+<option value="">Amazon Prime</option>
+<option value="">Disney+</option>
+<option value="">Telecine</option>
+<option value="">HBO+</option>
+<option value="">Apple TV</option>
+</select>
+
+<label for="filme">Escolha o Filme:</label>
+<select id="filme" onchange="atualizargênero()" enable>
+<option value="">Selecione...</option>
+<option value="">Sharkboy & Lavagirl</option>
+<option value="">A Pedra Mágica</option>
+<option value="">A Fantastica Fábrica de Chocolate</option>
+<option value="">O Planeta dos Macaco</option>
+<option value="">Liv and Maddie</option>
+<option value="">Jessie</option>
+<option value="">Shrek 1</option>
+<option value="">Shrek 2</option>
+<option value="">Hereditário</option>
+<option value="">O Chamado</option>
+<option value="">Invocação do Mal</option>
+<option value="">A Hora do Pesadelo</option>
+</select>
+
+<script src="script.js"></script>
+</body>
+</html>
